@@ -6,25 +6,61 @@
     <title>청첩장</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f8f8f8;
+            font-family: 'Noto Sans KR', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
         }
         .container {
             max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: white;
+            margin: 0 auto;
+            background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        .header, .footer {
-            background-color: #f2f2f2;
-            padding: 10px;
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #444;
+        }
+        .image {
+            width: 100%;
+            height: auto;
         }
         .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+        .content p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
             margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -33,12 +69,20 @@
         <div class="header">
             <h1>우리의 결혼식에 초대합니다</h1>
         </div>
+        <img class="image" src="https://via.placeholder.com/600x300" alt="결혼식 이미지">
         <div class="content">
-            <p>일시: 2024년 7월 20일 오후 5시</p>
-            <p>장소: 서울특별시 강남구</p>
+            <h2>일시</h2>
+            <p>2024년 7월 20일 오후 5시</p>
+            <h2>장소</h2>
+            <p>서울특별시 강남구</p>
+            <h2>신랑 신부</h2>
+            <p>신랑: 김철수</p>
+            <p>신부: 박영희</p>
+            <a href="https://maps.google.com?q=서울특별시+강남구" class="btn">지도 보기</a>
         </div>
         <div class="footer">
-            <p>신랑: 김철수 | 신부: 박영희</p>
+            <p>문의: 010-1234-5678</p>
+            <p>이메일: example@example.com</p>
         </div>
     </div>
 </body>
